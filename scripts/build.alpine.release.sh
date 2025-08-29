@@ -16,7 +16,7 @@ cmake -DCMAKE_BUILD_TYPE=Release -DYAML_CPP_BUILD_TESTS=OFF -DYAML_CPP_BUILD_TOO
 make install -j3 > /dev/null
 cd ..
 
-git clone https://github.com/ftk/quickjspp --depth=1
+git clone -b quickjs-2024-01-13 https://github.com/ftk/quickjspp --depth=1
 cd quickjspp
 cmake -DCMAKE_BUILD_TYPE=Release .
 make quickjs -j3 > /dev/null

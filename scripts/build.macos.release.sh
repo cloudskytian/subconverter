@@ -18,7 +18,7 @@ make -j6 > /dev/null
 sudo make install > /dev/null
 cd ..
 
-git clone https://github.com/ftk/quickjspp --depth=1
+git clone -b quickjs-2024-01-13 https://github.com/ftk/quickjspp --depth=1
 cd quickjspp
 cmake -DCMAKE_BUILD_TYPE=Release .
 make quickjs -j6 > /dev/null
